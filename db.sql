@@ -3,7 +3,7 @@ CREATE DATABASE NPI;
 DROP TABLE IF EXISTS NPIData;
 CREATE TABLE NPIData (
     NPI BIGINT PRIMARY KEY NOT NULL,
-    EntityType INT,
+    EntityType INT NOT NULL,
     ProviderOrganization VARCHAR(256),
     ProviderLastName VARCHAR(128),
     ProviderFirstName VARCHAR(128),
@@ -17,5 +17,9 @@ CREATE TABLE NPIData (
     ProviderState VARCHAR(64),
     ProviderPostalCode VARCHAR(32),
     ProviderTelephoneNumber VARCHAR(32),
-    ProviderFaxNumber VARCHAR(32)
+    ProviderFaxNumber VARCHAR(32),
+    INDEX (EntityType),
+    INDEX (ProviderLastName),
+    INDEX (ProviderState),
+    INDEX (ProviderCity)
 );
