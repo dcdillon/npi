@@ -1,7 +1,7 @@
 # npi
 
 #### db.sql
-This file contains MySQL commands for creating the database and table to contain the data.
+This file contains MySQL commands for creating the database and table to contain the data.  Before running `insert_npi_data.py` you should execute these commands on the MySQL server you wish to store data in.
 
 #### insert_npi_data.py
 This is a python script that can be called as follows:
