@@ -1,4 +1,10 @@
 # npi
+The included scripts will help you generate a stripped down database of NPI data as provided by the FDA.
+
+#### Requirements
+* A reasonably current version of python
+* A deployment of MySQL
+* The [MySQLdb](https://sourceforge.net/projects/mysql-python/) module for python
 
 #### db.sql
 This file contains MySQL commands for creating the database and table to contain the data.  Before running `insert_npi_data.py` you should execute these commands on the MySQL server you wish to store data in.  It will create a database called `NPI` and a table within it called `NPIData`.
