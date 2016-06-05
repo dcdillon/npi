@@ -2,7 +2,7 @@
 The included scripts will help you generate a stripped down database of NPI data as provided by the FDA.
 
 #### Requirements
-* A reasonably current version of python
+* A reasonable version of python (tested on 2.7.11)
 * A deployment of MySQL
 * The [MySQLdb](https://sourceforge.net/projects/mysql-python/) module for python
 
